@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Contact Page</title>
+<div class="sticky"><center><font  size="+3">50% off to start now learning</font></center></div>
+<body>
+    <link rel="stylesheet" href="contact.css" />
+    <div class="sidebar"><br><br><br><br><br><br><br>
+        <a  href="home.html"><FONT size="+2";><i class="fa fa-fw fa-home"></FONT></i></a>
+        <a href="news.html"><FONT size="+2";><i class="fa fa-fw fa-search"></FONT></i></a>
+        <a class="active" href="contact.html"><FONT size="+2";><i class="fa fa-fw fa-envelope"></FONT></i></a>
+        <a href="login.html"><FONT size="+2";><i class="fa fa-fw fa-user"></FONT></i></a>
+        <a href="game.html"><FONT size="+2"><i class="fa fa-fw fa-gamepad"></i></FONT></a>
+        <a href="homedark.html"><FONT size="+2"><i class="fa fa-fw fa-moon"></i></FONT></a>
+        <a href="https://www.google.com/"><FONT size="+2"><i class="fa fa-fw from-bracket"></i></FONT></a>
+      </div>
+      <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="submited.html" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+    <label for="msg"><b>Email</b></label>
+    <textarea placeholder="Type Email.." name="msg" required></textarea>
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>
