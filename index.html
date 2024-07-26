@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/6cc3f39c59.js" crossorigin="anonymous"></script>
+    <title>Saune</title>
+</head>
+<body>
+
+    <div class="header"> 
+
+        <div class="subnavbar">
+            <h3 class="subnavbar-element fadeInLeft"><i class="fa-solid fa-phone"></i>&MediumSpace; 0770 693 262</h3>
+            <h3 class="subnavbar-element fadeInLeft"><i class="fa-regular fa-clock"></i> Luni - Vineri 12:00 - 17:00</h3>
+        </div>
+
+        <div class="navbar">
+            <div class="navbar-left">
+                
+           </div>
+    
+            <div class="navbar-right">
+    
+                <div class="off-screen-menu">
+                    <ul>
+                        <li>Produse</li>
+                        <li>Contact</li>
+                        <li>Despre Noi</li>
+                    </ul>
+                </div>
+    
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+    
+           </div>
+        
+    </div>
+
+
+    <div class="header-container">
+        <div class="header-text-container">
+            <h3 class="header-title fadeInDown">BUN VENIT</h3>
+            <h3 class="header-subtitle fadeInDown">SAUNE ORADEA</h3>
+            <button class="header-button fadeInDown">Produse</button>
+        </div>
+    </div>
+
+    <div class="produse">
+        <div class="produse-container">
+            <img src="Media/Sauan-lemn.jpg" alt="" class="produse-img">
+            <h3 class="produse-title">Sauna Din Lemn</h3>
+            <h3 class="produse-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rerum cupiditate distinctio deleniti tempore accusamus architecto in excepturi, sit id labore nemo voluptatibus dolores modi qui sunt sequi, ea hic?</h3>
+            <button class="produse-button">Vezi mai mult</button>
+        </div>
+
+        <div class="produse-container">
+            <img src="Media/sauna-sare.jpg" alt="" class="produse-img">
+            <h3 class="produse-title">Sauna cu sare</h3>
+            <h3 class="produse-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rerum cupiditate distinctio deleniti tempore accusamus architecto in excepturi, sit id labore nemo voluptatibus dolores modi qui sunt sequi, ea hic?</h3>
+            <button class="produse-button">Vezi mai mult</button>
+        </div>
+
+        <div class="produse-container">
+            <img src="Media/sauna-clasica.jpg" alt="" class="produse-img">
+            <h3 class="produse-title">Sauna Clasica</h3>
+            <h3 class="produse-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rerum cupiditate distinctio deleniti tempore accusamus architecto in excepturi, sit id labore nemo voluptatibus dolores modi qui sunt sequi, ea hic?</h3>
+            <button class="produse-button">Vezi mai mult</button>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="about-container">
+
+            <img src="Media/about.jpg" alt="" class="about-img">
+
+            <div class="about-text">
+                <h3 class="about-title">Despre noi</h3>
+                <h3 class="about-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eos commodi voluptatem aliquid ullam, nam omnis soluta iste totam ducimus amet earum labore cumque consequatur nostrum! Vitae commodi in quibusdam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iure odit, mollitia qui aperiam minima beatae sapiente inventore expedita </h3>
+                <button class="about-button">Vezi mai mult</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3 class="footer-text">© 2024. Toate drepturile rezervate</h3>
+    </div>
+
+    <script>
+        const hamMenu = document.querySelector('.ham-menu');
+        const offScreenMenu = document.querySelector('.off-screen-menu')
+
+        hamMenu.addEventListener('click', () => {
+            hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
